@@ -1,8 +1,9 @@
 ## Curso FrontEnd
--Revisão Html e CSS
+---Revisão Html e CSS---
+
  -Html
  -CSS
  -Responsividade
- -Media Query
+ -Media Query-
     
--Introdução ao JavaScript
+---Introdução ao JavaScript---
