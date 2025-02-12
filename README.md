@@ -4,5 +4,4 @@
     -CSS
     -Responsividade
     -Media Query
-
     -Introdução ao JavaScript
