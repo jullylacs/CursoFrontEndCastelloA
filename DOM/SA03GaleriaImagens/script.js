@@ -54,15 +54,14 @@ function atualizarCarrossel(){
         img.style.width = "100%"; //garante o ajuste de 100% da imagem
         divCarrossel.appendChild(img); //img -> div
     });
-    
-    //ajustedo carrossel -> movimentação
-    divCarrossel.style.width = `${imagensUrl.length*100}%` //ajusta a largua do carrossel
-    //iniciar o carrossel
-    iniciarCarrossel();
-}
 
-//função de iniciar carrossel
-function iniciarCarrossel(){
+    //ajuste do carrossel -> movimetação
+    divCarrossel.style.width = `${imagensUrl.length*100}%`//ajusta a largura do carrossel
+    //iniciar o carrossel
+    inciarCarrossel();
+}
+//função para inciar carrossel
+function inciarCarrossel(){
     let index = 0;
 
     setInterval(()=>{

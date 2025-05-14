@@ -1,77 +1,54 @@
-/* Corpo da página */
-body {
-    font-family: 'Comic Sans MS', sans-serif;  /* Mantendo a fonte Comic Sans MS */
-    background-color: #6a0dad;  /* Cor de fundo roxa */
-    color: white;  /* Cor do texto branca para contraste */
+body{
+    font-family: Comic Sans MS;
+    background-color: bisque;
     text-align: center;
-    margin: 0;
-    padding: 0;
 }
 
-/* Contêiner principal do quiz */
-.quizContainer {
-    background-color: #9b4dca;  /* Tom de roxo mais claro */
+.quizContainer{
+    background-color: aliceblue;
     width: 60%;
-    margin: 50px auto;  /* Distância do topo */
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);  /* Sombras mais suaves */
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
 }
 
-/* Estilo dos botões gerais */
-button {
-    padding: 12px 18px;
-    margin: 15px;
-    font-size: 18px;
+button{
+    padding: 10px 15px;
+    margin: 10px;
+    font-size: 16px;
     cursor: pointer;
     border: none;
-    border-radius: 10px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
-/* Botões desabilitados */
-button:disabled {
-    background: #8a2be2;  /* Cor de botão desabilitado em roxo mais escuro */
+button:disabled{
+    background: gray;
     cursor: not-allowed;
 }
 
-/* Estilo das opções de resposta */
-.opcao {
+.opcao{
     display: block;
-    padding: 12px 20px;
-    background-color: #8a2be2;  /* Roxo mais escuro */
-    margin: 10px;
-    border-radius: 8px;
+    padding: 10px;
+    background-color: lightblue;
+    margin: 5px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Efeito hover nas opções de resposta */
-.opcao:hover {
-    background-color: #7a0e9a;  /* Tom de roxo mais escuro no hover */
-    color: white;  /* Cor do texto quando passa o mouse */
-    transform: scale(1.05);  /* Efeito de aumento ao passar o mouse */
+.opcao:hover{
+    background-color: dodgerblue;
+    color: white;
 }
 
-/* Estilo para a resposta correta */
-.correta {
-    background-color: #32cd32 !important;  /* Verde vibrante para resposta correta */
-    color: white !important;
-    transform: scale(1.05);  /* Efeito de aumento para destaque */
+.correta{
+    background: green !important;
+    color: white;
 }
 
-/* Estilo para a resposta errada */
-.errada {
-    background-color: #ff4500 !important;  /* Laranja forte para resposta errada */
-    color: white !important;
-    transform: scale(1.05);  /* Efeito de aumento para destaque */
+.errada{
+    background: red !important;
+    color: white;
 }
 
-/* Estilo de texto de resposta */
-#resposta {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 20px;
-    color: #ffcc00;  /* Amarelo para destacar a resposta */
-}

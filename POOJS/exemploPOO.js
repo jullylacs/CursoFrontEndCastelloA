@@ -75,7 +75,7 @@ class Pessoa{
     }
     //metodo de acesso
     exibirInfo(){
-        console.log(`Nome: ${this.#nome} Idade: ${this.#idade} CPF: ${this.#cpf}`);
+        console.log(`Nome: ${this.#nome}\nIdade: ${this.#idade} \nCPF: ${this.#cpf}`);
     }
 }
 
@@ -117,11 +117,13 @@ class Funcionario extends Pessoa{
     //método de acesso
     exibirInfo(){
         super.exibirInfo();
-        console.log(`Cargo: ${this.#cargo} Salário: ${this.#salario}`);
+        console.log(`Cargo: ${this.#cargo}\nSalário: ${this.#salario}`);
     }
 }
-//instanciar os objetos da Classe Funcionário
+//instanciar os objetos da Classe Fucnionário
 let funcionario1 = new Funcionario("Pedro", 27, "321.654.987-00", "Motorista", 3000);
 funcionario1.exibirInfo();
 funcionario1.setSalario = 3500;
 funcionario1.exibirInfo();
+
+
