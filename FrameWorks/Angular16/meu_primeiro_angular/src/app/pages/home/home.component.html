@@ -2,6 +2,14 @@
 
 <h2>Hello, World!!!</h2>
 
+<div class="container">
+    <label for="">Digite seu nome</label>
+    <input type="text" name="userName" id="" [(ngModel)]="userName" placeholder="Nome do usuário">
+    <hr>
+    <p *ngIf="userName">olá, {{userName}}!!! É um prazer ter voce aqui!</p>
+    <p *ngIf="!userName">Por favor, digite seu nome para começar</p>
+</div>
+
 <app-banner></app-banner>
 
 <h3>Explore nossos Produtos e entre em Contato</h3>
