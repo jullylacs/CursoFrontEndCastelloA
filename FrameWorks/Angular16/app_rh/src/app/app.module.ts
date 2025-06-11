@@ -10,6 +10,7 @@ import { PainelVagasComponent } from './views/painel-vagas/painel-vagas.componen
 import { CurriculosComponent } from './views/curriculos/curriculos.component';
 import { HomeComponent } from './views/home/home.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule //módulo necessário para que a página faça as requisições HttpClient
+    HttpClientModule, //módulo necessário para que a página faça as requisições HttpClient
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
